@@ -60,8 +60,8 @@
             }, timeout);
             }(window, document, "body {opacity: 0 !important}", 3000));
          </script>
-         <script>
-            var dataLayer = [];
+        <!--<script>
+            var dataLayer ={
             dataLayer.push({
               'page': {
                 'pageInfo': {
@@ -69,6 +69,21 @@
                 }
               }
             });
+            </script>-->
+            <script>
+            var digitalData = {
+                account: {
+                  userId: userID,
+                  userName: userName,
+                  Age: "age",
+                  Email: "email",
+                },
+                page: {
+                  pageName: pageName,
+                  pageType: "page",
+                  pageUrl: pageUrl,
+                },
+              };
             </script>
         <script src="https://assets.adobedtm.com/6268dc4b6b26/d57075db70f1/launch-ce9f68f74f2b-development.min.js" async></script>
     </head>
